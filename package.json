@@ -11,7 +11,8 @@
     "preserve:ssr": "npm run build:ssr",
     "serve:ssr": "node dist/server/main.js",
     "build:ssr": "ng build && ng run angular-universal-ssr:server",
-    "prerender": "ng run angular-universal-ssr:prerender"
+    "prerender": "ng run angular-universal-ssr:prerender",
+    "vercel-build": "npm run prerender"
   },
   "private": true,
   "dependencies": {
